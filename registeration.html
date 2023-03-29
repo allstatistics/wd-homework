@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Ro'yhatdan o'tish</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-size: 18px;
+            color: balck;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    </style>
+    <nav class="container navbar navbar-expand-lg text-dark" style="background-color: #fafafa; font-size: 20px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-size: 35px;" href="index.html">Merit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 10px;">
+                <ul class="navbar-nav nav nav-pills nav-fill">
+                    <li class="nav-item" style="margin-right: 50px;">
+                        <button class="btn btn-outline-dark" onclick="location.href='index.html'">Bosh Sahifa</button>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                        <button class="btn btn-outline-dark" onclick="location.href='about.html'">Merit Haqida</button>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                        <button type="submit" class="btn btn-success" onclick="location.href='registeration.html'">Ariza
+                            Topshirish</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container mt-4 p-5 text-dark rounded" style="background-color: #fafafa;">
+        <h1>Farzandingizni ro'yhatdan o'tkazing</h1>
+        <br>
+        <form>
+            <div class="row g-3 col-12">
+                <div class="col">
+                    <label for="firstname">Ism</label>
+                    <input id="firstname" type="text" class="form-control" placeholder="Ism" aria-label="Ism" required>
+                </div>
+                <div class="col">
+                    <label for="lastname">Familiya</label>
+                    <input id="lastname" type="text" class="form-control" placeholder="Familiya" aria-label="Familiya"
+                        required>
+                </div>
+                <div class="col">
+                    <label for="inputGroupFile04">Tug'ilganlik haqida guvohnoma</label>
+                    <input type="file" class="form-control" id="inputGroupFile04"
+                        aria-describedby="inputGroupFileAddon04" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-5">
+                    <label>Farzandingiz jinsini kiriting</label>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                                required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                O'gil
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Qiz
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>Farzandingizga qay bir ovqatni berish kerak</label>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Nonushta
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                                Tushlik
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                                Ujin
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Doimiy yashash manzilingizni kiriting</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Chilonzor tumani, 31-daha"
+                        required>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col">
+                        <label>Qulayroq bo'lgan filalimizni tanlang</label>
+                        <select class="form-select" aria-label="Default select example" required>
+                            <option aria-placeholder="Talang"></option>
+                            <option value="1">Oxunboboyev filiali</option>
+                            <option value="2">Mehnat filiali</option>
+                            <option value="3">Do'stlik filiali</option>
+                            <option value="4">Zenit filiali</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="number">Ota yoki onasining telefon raqami</label>
+                        <input type="tel" class="form-control" id="number" placeholder="912345678" required>
+                    </div>
+                    <div class="col">
+                        <label for="number2">Shaxsiy telefon raqami</label>
+                        <input type="tel" name="form-control" id="number2" placeholder="912345678">
+                        <div id="telHelp" class="form-text">Shaxsiy raqam kiritilishi majburiy emas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-outline-primary ">Ariza Topshirish</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
